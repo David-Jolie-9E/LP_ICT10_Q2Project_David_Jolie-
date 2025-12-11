@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUBS</title>
+
+     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        html, body { color: white !important; }
+        body{
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.527), rgba(0,0,0,0.5)) , url(blue.jpg);
+     }
+        body * { color: white !important; }
+      
+        input, textarea, select, .form-control { color: black !important; }
+        input::placeholder, textarea::placeholder { color: #888 !important; }
+        
+        select, .form-select { color: black !important; }
+        select option, .form-select option { color: black !important; background-color: #ffffff !important; }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+       <!--Brand/Logo-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="pencil.jpg" alt="logo" width="50 px"height="50 px" class="rounded-circle"></a>
+
+            <!--Add Links-->
+            <div class="collapse navbar-collapse">
+
+                <!--me-auto adjust pushes the search bar to the right-->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html" style="color:azure">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grades.html" style="color:azure">GRADE CALCULATOR</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clubs.html" style="color:azure">CLUBS</a></li>
+                </ul>
+ 
+                <!--Add search bar-->
+                <form class="d-flex" >
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-success" type="button" style="color:rgb(255, 255, 255)">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+
+    <h1 style="color:white; text-align:center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">School Club Information<h1>
+    
+<img src="pic of clubs.png"class="img-fluid mx-auto d-block mt-5 mb-5" alt="Fluid Image" width="300" height="30" style="border:solid;" style="border:solid;">
+   
+
+        <div class="container">
+
+        <form>
+
+            <select class="form-select" id="club-select">
+
+                <option value="">Select</option>
+                <option value="Dance Club">Dance Club</option>
+                <option value="Math Club">Math Club</option>
+                <option value="Science Club">Science Club</option>
+
+            </select>
+
+         </form>    
+
+         <button type="button" class="btn btn-success" py-click="show_club_description" style="background-color: #28a745; padding: 0.25rem 0.5rem; font-size: 0.875rem;">Choose Club</button>
+         
+         <div id="description-area" style="margin-top: 2rem; text-align: center; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></div>
+         
+         </div>   
+
+         <script type="py" src="main2.py"></script>
+        
+</body>
+</html>
